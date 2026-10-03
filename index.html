@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BiProTik Robotics Lab — Pertemuan 1</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     SIDEBAR
+========================================================= -->
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-logo">⚡</div>
+
+            <div>
+                <strong>BiProTik</strong>
+                <span>ROBOTICS LAB</span>
+            </div>
+        </div>
+
+        <div class="course-info">
+            <small>PERTEMUAN 01</small>
+            <b>Fundamental Robotics</b>
+        </div>
+
+        <nav id="navigation">
+
+            <button class="nav-item active" data-slide="0">
+                <span>01</span>
+                START
+            </button>
+
+            <button class="nav-item" data-slide="1">
+                <span>02</span>
+                ROBOTICS
+            </button>
+
+            <button class="nav-item" data-slide="2">
+                <span>03</span>
+                ELEKTRONIKA
+            </button>
+
+            <button class="nav-item" data-slide="3">
+                <span>04</span>
+                KOMPONEN
+            </button>
+
+            <button class="nav-item" data-slide="4">
+                <span>05</span>
+                BREADBOARD
+            </button>
+
+            <button class="nav-item" data-slide="5">
+                <span>06</span>
+                ARDUINO
+            </button>
+
+            <button class="nav-item" data-slide="6">
+                <span>07</span>
+                IDE
+            </button>
+
+            <button class="nav-item" data-slide="7">
+                <span>08</span>
+                WIRING
+            </button>
+
+            <button class="nav-item" data-slide="8">
+                <span>09</span>
+                CODE
+            </button>
+
+            <button class="nav-item" data-slide="9">
+                <span>10</span>
+                SIMULATOR
+            </button>
+
+            <button class="nav-item" data-slide="10">
+                <span>11</span>
+                CHALLENGE
+            </button>
+
+            <button class="nav-item" data-slide="11">
+                <span>12</span>
+                DEBUG
+            </button>
+
+            <button class="nav-item" data-slide="12">
+                <span>13</span>
+                QUIZ
+            </button>
+
+            <button class="nav-item" data-slide="13">
+                <span>14</span>
+                CLOSING
+            </button>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="status-dot"></div>
+            SYSTEM ONLINE
+
+            <small>
+                Arduino → ESP32
+            </small>
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <span id="breadcrumb">
+                    P1 / START
+                </span>
+            </div>
+
+            <div class="progress-wrapper">
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+
+                <span id="slideCounter">
+                    1 / 14
+                </span>
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             SLIDE 01
+        ================================================== -->
+
+        <section class="slide active" data-index="0">
+
+            <div class="hero">
+
+                <div class="hero-grid">
+
+                    <div class="hero-text">
+
+                        <div class="eyebrow">
+                            BUANA PERJUANGAN ROBOTIC CLUB
+                        </div>
+
+                        <h1>
+                            ROBOTICS
+                            <br>
+                            <span>LEARNING LAB</span>
+                        </h1>
+
+                        <p>
+                            Fundamental Elektronika, Arduino,
+                            Wiring dan Blink Pertama.
+                        </p>
+
+                        <button class="primary-button" data-next>
+                            ENTER THE LAB
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+
+                    <div class="hero-visual">
+
+                        <div class="robot-core">
+
+                            <div class="core-ring ring-1"></div>
+                            <div class="core-ring ring-2"></div>
+                            <div class="core-ring ring-3"></div>
+
+                            <div class="core-center">
+                                <span>⚡</span>
+                            </div>
+
+                        </div>
+
+                        <div class="floating-chip chip-1">
+                            INPUT
+                        </div>
+
+                        <div class="floating-chip chip-2">
+                            PROCESS
+                        </div>
+
+                        <div class="floating-chip chip-3">
+                            OUTPUT
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SLIDE 02
+        ================================================== -->
+
+        <section class="slide" data-index="1">
+
+            <div class="section-header">
+
+                <div class="eyebrow">
+                    01 · MINDSET
+                </div>
+
+                <h2>
+                    Robot itu sebenarnya apa?
+                </h2>
+
+                <p>
+                    Mulai dari pola paling dasar:
+                    <strong>Input → Process → Output</strong>.
+                </p>
+
+            </div>
+
+
+            <div class="flow-system">
+
+                <div class="flow-card input">
+
+                    <div class="flow-icon">
+                        👁️
+                    </div>
+
+                    <div class="flow-label">
+                        INPUT
+                    </div>
+
+                    <p>
+                        Sensor
+                        <br>
+                        Tombol
+                    </p>
+
+                </div>
+
+
+                <div class="flow-arrow">
+                    →
+                </div>
+
+
+                <div class="flow-card process">
+
+                    <div class="flow-icon">
+                        🧠
+                    </div>
+
+                    <div class="flow-label">
+                        PROCESS
+                    </div>
+
+                    <p>
+                        Arduino
+                        <br>
+                        Logika
+                    </p>
+
+                </div>
+
+
+                <div class="flow-arrow">
+                    →
+                </div>
+
+
+                <div class="flow-card output">
+
+                    <div class="flow-icon">
+                        ⚙️
+                    </div>
+
+                    <div class="flow-label">
+                        OUTPUT
+                    </div>
+
+                    <p>
+                        LED
+                        <br>
+                        Motor
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-panel">
+
+                <span class="panel-icon">💡</span>
+
+                <div>
+
+                    <strong>
+                        Cara berpikir robotik
+                    </strong>
+
+                    <p>
+                        Setiap sistem robotik bisa dipecah
+                        menjadi apa yang masuk, bagaimana sistem
+                        memprosesnya, dan apa yang keluar.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SLIDE 03
+        ================================================== -->
+
+        <section class="slide" data-index="2">
+
+            <div class="section-header">
+
+                <div class="eyebrow">
+                    02 · ELEKTRONIKA
+                </div>
+
+                <h2>
+                    Tiga besaran yang wajib kenal
+                </h2>
+
+            </div>
+
+
+            <div class="electronics-grid">
+
+                <div class="electro-card">
+
+                    <div class="electro-icon voltage">
+                        ⚡
+                    </div>
+
+                    <h3>
+                        Voltage
+                    </h3>
+
+                    <p>
+                        Tegangan adalah dorongan yang
+                        membuat muatan dapat bergerak.
+                    </p>
+
+                    <div class="metric">
+                        <span>Simbol</span>
+                        <b>V</b>
+                    </div>
+
+                    <div class="metric">
+                        <span>Satuan</span>
+                        <b>Volt</b>
+                    </div>
+
+                    <div class="metric">
+                        <span>Analogi</span>
+                        <b>Tekanan air</b>
+                    </div>
+
+                </div>
+
+
+                <div class="electro-card">
+
+                    <div class="electro-icon current">
+                        💧
+                    </div>
+
+                    <h3>
+                        Current
+                    </h3>
+
+                    <p>
+                        Arus adalah aliran muatan listrik
+                        melalui rangkaian.
+                    </p>
+
+                    <div class="metric">
+                        <span>Simbol</span>
+                        <b>I</b>
+                    </div>
+
+                    <div class="metric">
+                        <span>Satuan</span>
+                        <b>Ampere</b>
+                    </div>
+
+                    <div class="metric">
+                        <span>Analogi</span>
+                        <b>Debit air</b>
+                    </div>
+
+                </div>
+
+
+                <div class="electro-card">
+
+                    <div class="electro-icon resistance">
+                        🧱
+                    </div>
+
+                    <h3>
+                        Resistance
+                    </h3>
+
+                    <p>
+                        Hambatan membatasi aliran arus
+                        dalam rangkaian.
+                    </p>
+
+                    <div class="metric">
+                        <span>Simbol</span>
+                        <b>R</b>
+                    </div>
+
+                    <div class="metric">
+                        <span>Satuan</span>
+                        <b>Ohm</b>
+                    </div>
+
+                    <div class="metric">
+                        <span>Analogi</span>
+                        <b>Pipa sempit</b>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="formula-card">
+
+                <span>OHM'S LAW</span>
+
+                <strong>
+                    V = I × R
+                </strong>
+
+                <p>
+                    Kalau tegangan tetap dan hambatan
+                    diperbesar, apa yang terjadi pada arus?
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SLIDE 04
+        ================================================== -->
+
+        <section class="slide" data-index="3">
+
+            <div class="section-header">
+
+                <div class="eyebrow">
+                    03 · KOMPONEN
+                </div>
+
+                <h2>
+                    Kenalan sama pasukan kita
+                </h2>
+
+            </div>
+
+
+            <div class="component-grid">
+
+                <div class="component-card">
+
+                    <div class="component-title">
+                        <span>💡</span>
+                        LED
+                    </div>
+
+                    <p>
+                        Output visual yang akan kita
+                        kontrol menggunakan Arduino.
+                    </p>
+
+                    <div class="led-stage">
+
+                        <div
+                            class="led"
+                            id="ledComponent">
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="secondary-button"
+                        id="toggleComponentLed">
+
+                        TOGGLE LED
+
+                    </button>
+
+                </div>
+
+
+                <div class="component-card">
+
+                    <div class="component-title">
+                        <span>〰️</span>
+                        RESISTOR
+                    </div>
+
+                    <p>
+                        Membatasi arus yang mengalir
+                        menuju LED.
+                    </p>
+
+                    <div class="resistor-visual">
+
+                        <div class="resistor-body">
+
+                            <i></i>
+                            <i></i>
+                            <i></i>
+
+                        </div>
+
+                    </div>
+
+                    <div class="component-value">
+                        220 Ω
+                    </div>
+
+                </div>
+
+
+                <div class="component-card">
+
+                    <div class="component-title">
+                        <span>🔌</span>
+                        JUMPER
+                    </div>
+
+                    <p>
+                        Kabel penghubung antar titik
+                        pada rangkaian.
+                    </p>
+
+                    <div class="jumper-visual">
+
+                        <div class="jumper-wire"></div>
+
+                        <div class="jumper-head left"></div>
+                        <div class="jumper-head right"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SLIDE 05
+        ================================================== -->
+
+        <section class="slide" data-index="4">
+
+            <div class="section-header">
+
+                <div class="eyebrow">
+                    04 · BREADBOARD
+                </div>
+
+                <h2>
+                    Jangan cuma lihat lubang
+                </h2>
+
+                <p>
+                    Klik titik-titik breadboard untuk
+                    mensimulasikan jalur yang sedang ditelusuri.
+                </p>
+
+            </div>
+
+
+            <div class="breadboard-layout">
+
+                <div class="breadboard-card">
+
+                    <div class="power-rail">
+                        <span>+</span>
+                        <span>+</span>
+                        <span>+</span>
+                        <span>+</span>
+                        <span>+</span>
+                    </div>
+
+                    <div
+                        class="breadboard"
+                        id="breadboard">
+                    </div>
+
+                    <div class="power-rail negative">
+                        <span>−</span>
+                        <span>−</span>
+                        <span>−</span>
+                        <span>−</span>
+                        <span>−</span>
+                    </div>
+
+                </div>
+
+
+                <div class="breadboard-info">
+
+                    <div class="info-panel vertical">
+
+                        <span class="panel-icon">
+                            🔎
+                        </span>
+
+                        <strong>
+                            Observasi
+                        </strong>
+
+                        <p>
+                            Cari tahu titik mana yang
+                            terhubung sebelum memasang
+                            komponen.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="secondary-button"
+                        id="resetBreadboard">
+
+                        RESET HOLES
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SLIDE 06
+        ================================================== -->
+
+        <section class="slide" data-index="5">
+
+            <div class="section-header">
+
+                <div class="eyebrow">
+                    05 · ARDUINO UNO
+                </div>
+
+                <h2>
+                    Arduino Uno = otak kecil kita
+                </h2>
+
+            </div>
+
+
+            <div class="arduino-layout">
+
+                <div class="arduino-board">
+
+                    <div class="usb-port">
+                        USB
+                    </div>
+
+                    <div class="arduino-chip">
+                        ATmega328P
+                    </div>
+
+                    <div class="arduino-logo">
+                        ∞
+                    </div>
+
+                    <div class="digital-pins">
+
+                        <span>D13</span>
+                        <span>D12</span>
+                        <span>D11</span>
+                        <span>D10</span>
+                        <span>D9</span>
+                        <span>D8</span>
+                        <span>D7</span>
+                        <span>D6</span>
+                        <span>D5</span>
+
+                    </div>
+
+                    <div class="analog-pins">
+
+                        <span>A0</span>
+                        <span>A1</span>
+                        <span>A2</span>
+                        <span>A3</span>
+                        <span>A4</span>
+                        <span>A5</span>
+
+                    </div>
+
+                    <div class="power-pins">
+                        5V · GND
+                    </div>
+
+                </div>
+
+
+                <div class="arduino-info">
+
+                    <div class="arduino-feature">
+                        <b>DIGITAL</b>
+                        <span>Input / Output</span>
+                    </div>
+
+                    <div class="arduino-feature">
+                        <b>ANALOG</b>
+                        <span>A0 – A5</span>
+                    </div>
+
+                    <div class="arduino-feature">
+                        <b>POWER</b>
+                        <span>5V / GND</span>
+                    </div>
+
+                    <div class="arduino-feature">
+                        <b>USB</b>
+                        <span>Upload + Serial</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SLIDE 07
+        ================================================== -->
+
+        <section class="slide" data-index="6">
+
+            <div class="section-header">
+
+                <div class="eyebrow">
+                    06 · ARDUINO IDE
+                </div>
+
+                <h2>
+                    Dari kode → board
+                </h2>
+
+            </div>
+
+
+            <div class="ide-flow">
+
+                <div class="ide-step">
+
+                    <div>⌨️</div>
+
+                    <strong>
+                        WRITE
+                    </strong>
+
+                    <span>
+                        Tulis kode
+                    </span>
+
+                </div>
+
+                <div class="flow-arrow">
+                    →
+                </div>
+
+                <div class="ide-step">
+
+                    <div>✓</div>
+
+                    <strong>
+                        VERIFY
+                    </strong>
+
+                    <span>
+                        Cek kode
+                    </span>
+
+                </div>
+
+                <div class="flow-arrow">
+                    →
+                </div>
+
+                <div class="ide-step">
+
+                    <div>⬆️</div>
+
+                    <strong>
+                        UPLOAD
+                    </strong>
+
+                    <span>
+                        Kirim ke board
+                    </span>
+
+                </div>
+
+                <div class="flow-arrow">
+                    →
+                </div>
+
+                <div class="ide-step">
+
+                    <div>🤖</div>
+
+                    <strong>
+                        RUN
+                    </strong>
+
+                    <span>
+                        Arduino bekerja
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="setup-grid">
+
+                <div class="setup-card">
+                    <span>01</span>
+                    Install Arduino IDE
+                </div>
+
+                <div class="setup-card">
+                    <span>02</span>
+                    Connect USB
+                </div>
+
+                <div class="setup-card">
+                    <span>03</span>
+                    Select Board
+                </div>
+
+                <div class="setup-card">
+                    <span>04</span>
+                    Select Port
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SLIDE 08
+        ================================================== -->
+
+        <section class="slide" data-index="7">
+
+            <div class="section-header">
+
+                <div class="eyebrow">
+                    07 · WIRING
+                </div>
+
+                <h2>
+                    Rangkaian LED pertama
+                </h2>
+
+                <p>
+                    D13 → Resistor → LED → GND
+                </p>
+
+            </div>
+
+
+            <div class="wiring-lab" id="wiringLab">
+
+                <div class="wire-component pin-component">
+                    <small>ARDUINO</small>
+                    <strong>D13</strong>
+                </div>
+
+                <div class="wire-component resistor-component">
+                    220 Ω
+                </div>
+
+                <div class="wire-component led-component">
+
+                    <div
+                        class="led"
+                        id="wiringLed">
+                    </div>
+
+                    LED
+
+                </div>
+
+                <div class="wire-component gnd-component">
+                    GND
+                </div>
+
+
+                <div class="connection line-1"></div>
+                <div class="connection line-2"></div>
+                <div class="connection line-3"></div>
+
+                <div
+                    class="electric-particle"
+                    id="electricParticle">
+                </div>
+
+            </div>
+
+
+            <div class="button-row">
+
+                <button
+                    class="secondary-button"
+                    id="runCurrent">
+
+                    ⚡ RUN CURRENT
+
+                </button>
+
+                <button
+                    class="secondary-button"
+                    id="toggleWiringLed">
+
+                    LED ON / OFF
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SLIDE 09
+        ================================================== -->
+
+        <section class="slide" data-index="8">
+
+            <div class="section-header">
+
+                <div class="eyebrow">
+                    08 · PROGRAMMING
+                </div>
+
+                <h2>
+                    Bedah Blink
+                </h2>
+
+            </div>
+
+
+            <div class="code-layout">
+
+                <div class="code-window">
+
+                    <div class="window-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <label>
+                            blink.ino
+                        </label>
+                    </div>
+
+
+<pre><code><span class="code-keyword">const int</span> LED_PIN = <span class="code-number">13</span>;
+
+<span class="code-keyword">void</span> <span class="code-function">setup</span>() {
+    <span class="code-function">pinMode</span>(LED_PIN, OUTPUT);
+}
+
+<span class="code-keyword">void</span> <span class="code-function">loop</span>() {
+
+    <span class="code-function">digitalWrite</span>(
+        LED_PIN,
+        HIGH
+    );
+
+    <span class="code-function">delay</span>(<span class="code-number">1000</span>);
+
+    <span class="code-function">digitalWrite</span>(
+        LED_PIN,
+        LOW
+    );
+
+    <span class="code-function">delay</span>(<span class="code-number">1000</span>);
+}</code></pre>
+
+                </div>
+
+
+                <div class="code-explainer">
+
+                    <h3>
+                        Klik bagian kode
+                    </h3>
+
+                    <button class="code-chip" data-explain="const">
+                        const int
+                    </button>
+
+                    <button class="code-chip" data-explain="setup">
+                        setup()
+                    </button>
+
+                    <button class="code-chip" data-explain="pinMode">
+                        pinMode()
+                    </button>
+
+                    <button class="code-chip" data-explain="digitalWrite">
+                        digitalWrite()
+                    </button>
+
+                    <button class="code-chip" data-explain="delay">
+                        delay()
+                    </button>
+
+                    <button class="code-chip" data-explain="loop">
+                        loop()
+                    </button>
+
+                    <div
+                        class="explanation"
+                        id="codeExplanation">
+
+                        Pilih bagian kode untuk melihat
+                        penjelasannya.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SLIDE 10
+        ================================================== -->
+
+        <section class="slide" data-index="9">
+
+            <div class="section-header">
+
+                <div class="eyebrow">
+                    09 · SIMULATOR
+                </div>
+
+                <h2>
+                    Virtual LED Blink
+                </h2>
+
+                <p>
+                    Rasakan hubungan antara HIGH, LOW,
+                    dan delay.
+                </p>
+
+            </div>
+
+
+            <div class="simulator">
+
+                <div class="simulator-screen">
+
+                    <div
+                        class="led huge"
+                        id="simulatorLed">
+                    </div>
+
+                    <div class="sim-status" id="simStatus">
+                        HIGH
+                    </div>
+
+                </div>
+
+
+                <div class="sim-controls">
+
+                    <h3>
+                        BLINK SPEED
+                    </h3>
+
+                    <button
+                        class="speed-button"
+                        data-speed="1000">
+
+                        1000 ms
+
+                    </button>
+
+                    <button
+                        class="speed-button"
+                        data-speed="500">
+
+                        500 ms
+
+                    </button>
+
+                    <button
+                        class="speed-button"
+                        data-speed="200">
+
+                        200 ms
+
+                    </button>
+
+                    <button
+                        class="speed-button"
+                        id="stopSimulator">
+
+                        STOP
+
+                    </button>
+
+                    <div class="sim-info">
+
+                        <div>
+                            <span>STATE</span>
+                            <b id="simState">
+                                HIGH
+                            </b>
+                        </div>
+
+                        <div>
+                            <span>DELAY</span>
+                            <b id="simDelay">
+                                1000 ms
+                            </b>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SLIDE 11
+        ================================================== -->
+
+        <section class="slide" data-index="10">
+
+            <div class="section-header">
+
+                <div class="eyebrow">
+                    10 · CHALLENGE
+                </div>
+
+                <h2>
+                    Challenge Arena ⚔️
+                </h2>
+
+                <p>
+                    Jangan langsung copy-paste.
+                    Jelaskan logikanya dulu.
+                </p>
+
+            </div>
+
+
+            <div class="challenge-grid">
+
+                <button
+                    class="challenge-card"
+                    data-challenge="fast">
+
+                    <span>⚡</span>
+
+                    <strong>
+                        FAST BLINK
+                    </strong>
+
+                    <small>
+                        Buat LED berkedip lebih cepat.
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="challenge-card"
+                    data-challenge="sequence">
+
+                    <span>🔁</span>
+
+                    <strong>
+                        ON → ON → OFF
+                    </strong>
+
+                    <small>
+                        Ubah urutan output LED.
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="challenge-card"
+                    data-challenge="sos">
+
+                    <span>... --- ...</span>
+
+                    <strong>
+                        SOS MORSE
+                    </strong>
+
+                    <small>
+                        Buat pola SOS dengan LED.
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="challenge-card"
+                    data-challenge="explain">
+
+                    <span>🧠</span>
+
+                    <strong>
+                        EXPLAIN
+                    </strong>
+
+                    <small>
+                        Jelaskan setup() dan loop().
+                    </small>
+
+                </button>
+
+            </div>
+
+
+            <div
+                class="challenge-output"
+                id="challengeOutput">
+
+                <span>ARENA READY</span>
+
+                <p>
+                    Pilih challenge untuk membuka misi.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SLIDE 12
+        ================================================== -->
+
+        <section class="slide" data-index="11">
+
+            <div class="section-header">
+
+                <div class="eyebrow">
+                    11 · DEBUG LAB
+                </div>
+
+                <h2>
+                    Kalau LED tidak nyala?
+                </h2>
+
+                <p>
+                    Jangan panik. Debugging adalah bagian
+                    dari belajar robotik.
+                </p>
+
+            </div>
+
+
+            <div class="debug-layout">
+
+                <div class="fault-list">
+
+                    <button
+                        class="fault-button"
+                        data-fault="wire">
+
+                        <span>🔌</span>
+
+                        <div>
+                            <strong>
+                                WIRING
+                            </strong>
+
+                            <small>
+                                Jalur atau polaritas salah.
+                            </small>
+                        </div>
+
+                    </button>
+
+
+                    <button
+                        class="fault-button"
+                        data-fault="port">
+
+                        <span>💻</span>
+
+                        <div>
+                            <strong>
+                                BOARD / PORT
+                            </strong>
+
+                            <small>
+                                Upload tidak menuju board.
+                            </small>
+                        </div>
+
+                    </button>
+
+
+                    <button
+                        class="fault-button"
+                        data-fault="code">
+
+                        <span>🧠</span>
+
+                        <div>
+                            <strong>
+                                CODE LOGIC
+                            </strong>
+
+                            <small>
+                                Pin atau urutan salah.
+                            </small>
+                        </div>
+
+                    </button>
+
+                </div>
+
+
+                <div class="debug-console">
+
+                    <div class="console-header">
+                        DEBUG CONSOLE
+                        <span>● ● ●</span>
+                    </div>
+
+                    <div id="debugOutput">
+
+                        <div class="console-line">
+                            <span>></span>
+                            System waiting...
+                        </div>
+
+                        <div class="console-line muted">
+                            Select a fault to diagnose.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="debug-rule">
+
+                <span>HARDWARE</span>
+                →
+                <span>WIRING</span>
+                →
+                <span>BOARD / PORT</span>
+                →
+                <span>ERROR</span>
+                →
+                <span>LOGIC</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SLIDE 13
+        ================================================== -->
+
+        <section class="slide" data-index="12">
+
+            <div class="section-header">
+
+                <div class="eyebrow">
+                    12 · BOSS FIGHT
+                </div>
+
+                <h2>
+                    Final Quiz
+                </h2>
+
+            </div>
+
+
+            <div class="quiz-container">
+
+                <div class="quiz-progress">
+
+                    <span id="quizNumber">
+                        QUESTION 1 / 5
+                    </span>
+
+                    <div>
+                        SCORE:
+                        <b id="quizScore">
+                            0
+                        </b>
+                    </div>
+
+                </div>
+
+
+                <div class="quiz-question">
+
+                    <h3 id="quizQuestion">
+                        Loading...
+                    </h3>
+
+                    <div
+                        class="quiz-options"
+                        id="quizOptions">
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="quiz-feedback"
+                    id="quizFeedback">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             SLIDE 14
+        ================================================== -->
+
+        <section class="slide" data-index="13">
+
+            <div class="closing">
+
+                <div class="closing-orb">
+                    ⚡
+                </div>
+
+                <div class="eyebrow">
+                    MISSION COMPLETE
+                </div>
+
+                <h2>
+                    BUILD.
+                    <br>
+                    BREAK.
+                    <br>
+                    DEBUG.
+                </h2>
+
+                <p>
+                    Hari ini bukan tentang menghafal Arduino.
+                    Targetnya memahami hubungan:
+                </p>
+
+                <div class="closing-chain">
+
+                    <span>
+                        COMPONENT
+                    </span>
+
+                    <b>→</b>
+
+                    <span>
+                        WIRING
+                    </span>
+
+                    <b>→</b>
+
+                    <span>
+                        CODE
+                    </span>
+
+                    <b>→</b>
+
+                    <span>
+                        BEHAVIOR
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="primary-button"
+                    data-slide-target="10">
+
+                    REPLAY CHALLENGE
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             BOTTOM NAV
+        ================================================== -->
+
+        <footer class="bottom-nav">
+
+            <button
+                id="prevButton"
+                class="secondary-button">
+
+                ← PREV
+
+            </button>
+
+
+            <div class="keyboard-hint">
+
+                ← →
+                <span>
+                    keyboard navigation
+                </span>
+
+            </div>
+
+
+            <button
+                id="nextButton"
+                class="primary-button">
+
+                NEXT →
+
+            </button>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
